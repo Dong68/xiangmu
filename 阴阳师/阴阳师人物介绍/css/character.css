@@ -1,0 +1,1559 @@
+@charset "CESU-8"; /*选择打开的翻译*/
+.main {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1600px;
+    background: url(../images/bg_footer_fc1f919.png) 50% 100% no-repeat;
+    overflow: hidden
+}
+
+
+
+/*--------------------------------------*/
+/*左侧主角录*/
+.title {
+    z-index: 9;
+    position: absolute;
+    top: 138px;
+    left: -174px;
+    width: 174px;
+    height: 380px;
+    text-indent: -9999px;
+    background: url(../images/zhu-jiao-lu.png) no-repeat;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    border-right: 1px solid #ccc \9
+}
+
+.top-bar {
+    z-index: 10;
+    position: absolute;
+    top: -100px;
+    max-width: 1920px;
+    min-width: 1200px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc
+}
+
+.top-bar .download-icon {
+    float: left;
+    margin: 14px 0;
+    padding: 0 14px;
+    height: 72px;
+    border-right: 1px solid #ccc
+}
+
+.top-bar .download-icon span {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    width: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #fff;
+    transition: all .5s
+}
+
+.top-bar .download-icon img {
+    float: left;
+    width: 72px;
+    height: 72px
+}
+
+.top-bar .logo-icon {
+    float: left;
+    margin: 14px;
+    height: 72px
+}
+
+.top-bar .logo-icon img {
+    float: left;
+    width: 72px;
+    height: 72px
+}
+
+.top-bar .logo-icon .game-name {
+    float: left;
+    margin-left: 14px
+}
+
+.top-bar .logo-icon .game-name h3 {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .5s
+}
+
+.top-bar .logo-icon .game-name p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    transition: all .5s
+}
+
+.top-bar .nav {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 100%;
+    font-size: 0
+}
+
+.top-bar .nav .nav-btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    font-size: 0
+}
+
+.top-bar .nav .nav-btn .nav-name {
+    display: block;
+    margin: 38px 0;
+    width: 100px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    transition: all .5s
+}
+
+.top-bar .nav .nav-btn .nav-arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #e1ebeb;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    opacity: 0;
+    display: none \9;
+    transition: all .5s
+}
+
+.top-bar .nav .nav-btn:hover .nav-name, .top-bar .nav .nav-btn.hover .nav-name {
+    color: #cc4336
+}
+
+.top-bar .nav .nav-btn:hover .nav-arrow, .top-bar .nav .nav-btn.hover .nav-arrow {
+    opacity: 1;
+    display: block \9
+}
+
+.top-bar .nav .nav-line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 24px;
+    background: url(../images/topbar_line_white_8ec6c7d.png) no-repeat;
+    transition: all .5s
+}
+/*--------------------------------------------------------------*/
+ .nav-more {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #e1ebeb;
+    /*overflow: hidden;*/
+    transition: all .5s
+}
+
+ .nav-more.show {
+    height: 174px
+}
+
+ .nav-more .nav-more-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 174px;
+    font-size: 0;
+    text-align: right;
+    z-index: 0;
+    opacity: 0;
+    /*display: none \9;*/
+    transition: all .5s;
+    background-color: #E1EBEB;     
+}
+
+ .nav-more .nav-more-list.show {
+    z-index: 1;
+    opacity: 1;
+    display: block \9
+}
+
+ .nav-more .nav-more-list .nav-more-btn {
+    display: inline-block;
+    position: relative;
+    margin: 35px 0;
+    width: 222px;
+    height: 104px;
+    vertical-align: top;
+    border-right: 1px solid #c8d0d0;
+    *zoom: 1;
+    *display: inline
+}
+
+.nav-more .nav-more-list .nav-more-btn.last {
+    border-right: 0
+}
+
+ .nav-more .nav-more-list .nav-more-btn .nav-more-inner {
+    width: 100%;
+    height: 100%;
+    transition: all .5s
+}
+
+ .nav-more .nav-more-list .nav-more-btn .nav-more-icon {
+    display: block;
+    margin: 0 auto
+}
+
+ .nav-more .nav-more-list .nav-more-btn .nav-more-icon.qrcode {
+    margin-top: -10px;
+    width: 84px;
+    height: 84px;
+    border: 2px solid #666;
+    border-radius: 5px
+}
+
+ .nav-more .nav-more-list .nav-more-btn .nav-more-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #666
+}
+
+ .nav-more .nav-more-list .nav-more-btn:hover .nav-more-inner {
+    -webkit-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    transform: translate(0, -15px)
+}
+
+.nav-more .nav-more-list .qq-group {
+    display: inline-block;
+    position: relative;
+    margin: 35px 0;
+    width: 370px;
+    height: 104px;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline
+}
+
+ .nav-more .nav-more-list .qq-group ul {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 0;
+    text-align: left
+}
+
+ .nav-more .nav-more-list .qq-group li {
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+    *zoom: 1;
+    *display: inline
+}
+
+.nav-more .nav-more-list .qq-group span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #666
+}
+
+.top-bar.hover {
+    background-color: rgba(255, 255, 255, .9);
+    background-color: #fff \9
+}
+
+.top-bar.hover .download-icon span {
+    color: #333
+}
+
+.top-bar.hover .logo-icon .game-name h3 {
+    color: #333
+}
+
+.top-bar.hover .logo-icon .game-name p {
+    color: #333
+}
+
+.top-bar.hover .nav .nav-btn .nav-name {
+    color: #333
+}
+
+.top-bar.hover .nav .nav-btn:hover .nav-name, .top-bar.hover .nav .nav-btn.hover .nav-name {
+    color: #cc4336
+}
+
+.top-bar.hover .nav .nav-line {
+    background: url(../images/topbar_line_black_cd58634.png) no-repeat
+}
+
+/*导航结束*/
+
+/*----------------左侧背景透明----------------------*/
+.side-bar.fixed {
+position: fixed;
+top: 0;
+background-color: rgba(255,255,255,.8);
+background-color: #fff\9;
+}
+
+/*人物左侧跳转开始*/
+.side-bar {
+    z-index: 11;
+    position: absolute;
+    top: 510px;
+    width: 174px;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    border-right: 1px solid #ccc \9;
+    left: -175px;
+}
+
+.side-bar .link .btn-link {
+    display: block;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 89px;
+    text-indent: -9999px
+}
+
+.side-bar .link .btn-link1 {
+    /*background: url(../images/top/name1/touxiang2.png) no-repeat*/
+    background: url(../images/top/name1/touxiang1.png) no-repeat
+
+}
+
+.side-bar .link .btn-link1:hover, .side-bar .link .btn-link1.cur {
+    /*background: url(../images/top/name1/touxiang1.png) no-repeat*/
+    background: url(../images/top/name1/touxiang2.png) no-repeat
+
+}
+
+.side-bar .link .btn-link2 {
+    background: url(../images/btn_link2_f1ea288.png) no-repeat
+}
+
+.side-bar .link .btn-link2:hover, .side-bar .link .btn-link2.cur {
+    background: url(../images/btn_link2_hover_f1c2663.png) no-repeat
+}
+
+.side-bar .link .btn-link3 {
+    background: url(../images/btn_link3_3a68faa.png) no-repeat
+}
+
+.side-bar .link .btn-link3:hover, .side-bar .link .btn-link3.cur {
+    background: url(../images/btn_link3_hover_2c41d35.png) no-repeat
+}
+
+.side-bar .link .btn-link4 {
+    background: url(../images/btn_link4_d2d5cc0.png) no-repeat
+}
+
+.side-bar .link .btn-link4:hover, .side-bar .link .btn-link4.cur {
+    background: url(../images/btn_link4_hover_610610d.png) no-repeat
+}
+
+.side-bar .download-icon {
+    margin: 20px auto;
+    width: 100px;
+    height: 72px;
+    visibility: hidden;
+    /*opacity: 0;*/
+    display: none;
+    /*transition: all .5s;*/
+    /*display: block;*/
+}
+
+.side-bar .download-icon span {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    width: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #333
+}
+
+.side-bar .download-icon img {
+    float: left;
+    width: 72px;
+    height: 72px
+}
+
+.side-bar.fixed {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, .9);
+    background-color: #fff \9
+}
+
+.side-bar.fixed .download-icon {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/*人物左侧跳转结束*/
+
+/*中间人物部分开始*/
+.section-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%
+}
+
+.section-content .section-title {
+    position: relative
+}
+
+.section-content .section-title-head {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ccc
+}
+
+.section-content .section-title-foot {
+    display: block;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000
+}
+
+.section-content .section-title-line {
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #000
+}
+
+.section-content .section-title-line.left {
+    left: -120px;
+    bottom: 20px
+}
+
+.section-content .section-title-line.bottom {
+    left: 0;
+    bottom: -30px
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%
+}
+
+.btn {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000
+}
+
+.btn .btn-line {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px
+}
+
+.btn .btn-line i {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    background-color: #000;
+    transition: all .3s
+}
+
+.btn:hover {
+    color: #000
+}
+
+.btn:hover .btn-line i {
+    width: 50%
+}
+
+.section1 {
+    position: relative;
+    height: 1084px
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 1084px;
+    overflow: hidden;
+    /*background: url("../images/top/name1/top-bj.jpg");*/
+}
+
+.bg img {
+    position: absolute;
+    /*top: 150px;*/
+    left: -300px;
+    width: 2420px;
+    height: 1584px;
+    /*opacity: 0;*/
+
+}
+
+.soul {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -440px;
+    width: 1400px;
+    height: 1400px;
+    display: none;
+    /*opacity:0;*/
+}
+
+.soul img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.role {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -440px;
+    width: 1400px;
+    height: 1400px
+}
+
+.role img {
+    position: absolute;
+    top: 0;
+    left: 1100px;
+    width: 100%;
+    height: 100%
+}
+
+.role-title {
+    position: absolute;
+    top: 175px;
+    /*margin-top: 154px;*/
+    left: 0;
+    display: none;
+    /*display: block;*/
+
+}
+
+.role-title .role-name {
+    display: block;
+    height: 90px;
+    font-size: 90px;
+    line-height: 90px;
+    color: #fff
+}
+
+.role-title .btn-video {
+    position: absolute;
+    top: 8px;
+    right: -150px;
+    width: 116px;
+    height: 70px;
+    /*background: url(../images/b35a2a9a37cb44d3a8cb7d656535c366.gif);*/
+    border: 4px solid #fff
+}
+
+.role-title .btn-video .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.role-title .btn-video .box video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -63px;
+    width: 126px;
+    height: 76px
+}
+
+.role-title .btn-video .icon-video {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 22px;
+    height: 37px;
+    background: url(../images/icon_video_b1f2485.png) no-repeat
+}
+
+.role-title .btn-video .btn-line {
+    left: 50%;
+    bottom: -12px;
+    margin-left: -62px;
+    width: 124px;
+    padding-top: 3px;
+    height: 3px;
+    border-top: 3px solid #5e7a87
+}
+
+.role-title .btn-video .btn-line i {
+    border-bottom: 3px solid #5e7a87;
+    background-color: #fff
+}
+
+.role-cont {
+    position: absolute;
+    top: 422px;
+    left: 0;
+    width: 577px;
+    height: 336px;
+    display: none;
+    background: url(../images/jianjiebj.jpg) no-repeat
+}
+
+.role-cont .role-desc {
+    position: absolute;
+    width: 250px;
+    top: 44px;
+    left: 84px
+}
+
+.role-cont .role-desc p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000
+}
+
+.role-cont .btn-cv {
+    position: absolute;
+    top: 238px;
+    left: 82px;
+    width: 174px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 16px
+}
+
+.role-cont .btn-cv .icon-cv {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    width: 30px;
+    height: 20px;
+    font-size: 0;
+    text-indent: 0;
+    text-align: left
+}
+
+.role-cont .btn-cv .icon-cv i {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin: 0 1px;
+    background-color: #000
+}
+
+/*简介的盒子边框*/
+.role-cont .border {
+    position: absolute;
+    top: -65px;
+    right: -38px;
+    width: 230px;
+    height: 290px
+}
+
+.role-cont .border i {
+    position: absolute;
+    background-color: #333
+}
+
+/*上面的黑线*/
+.role-cont .border .border-top {
+    top: 0;
+    left: 0;
+    height: 8px
+}
+
+/*右面的黑线*/
+.role-cont .border .border-right {
+    top: 0;
+    right: 0;
+    width: 8px
+}
+
+/*下面的黑线*/
+.role-cont .border .border-bottom {
+    bottom: 0;
+    right: 0;
+    height: 8px
+}
+
+/*左侧的黑线*/
+.role-cont .border .border-left {
+    bottom: 0;
+    left: 0;
+    width: 8px
+}
+
+.role-cont .section-title {
+    position: absolute;
+    top: 44px;
+    right: 35px
+}
+
+.role-cont .icon-mouse {
+    position: absolute;
+    top: 388px;
+    left: 50%;
+    margin-left: -12px;
+    width: 24px;
+    height: 37px;
+    background: url(../images/icon_mouse1_85d39a1.png) no-repeat
+}
+
+.role-cont .icon-mouse .icon-mouse-line {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 8px;
+    background-color: #fff;
+    opacity: 1;
+
+}
+
+/*鼠标的盒子*/
+.role-cont .icon-mouse .icon-mouse-arrow1, .role-cont .icon-mouse .icon-mouse-arrow2, .role-cont .icon-mouse .icon-mouse-arrow3 {
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+    height: 5px;
+    background: url(../images/icon_mouse2_ad42e49.png) no-repeat
+}
+
+/*鼠标三个向下闪烁的动态*/
+.role-cont .icon-mouse .icon-mouse-arrow1 {
+    top: 40px;
+    opacity: 1;
+
+}
+
+.role-cont .icon-mouse .icon-mouse-arrow2 {
+    top: 47px;
+    opacity: 1;
+
+
+}
+
+.role-cont .icon-mouse .icon-mouse-arrow3 {
+    top: 54px;
+    opacity: 1;
+
+
+}
+
+/*技能介绍-----------------------*/
+
+.section2 {
+    position: relative;
+    height: 800px
+}
+
+.section2 .section-content {
+    background: url(../images/bg_section2_5a0edeb.png) 50% 0 no-repeat
+}
+
+.section2 .section-content .section-title {
+    position: absolute;
+    top: 278px;
+    left: 120px
+}
+
+.skill-slide {
+    position: absolute;
+    top: 162px;
+    left: 266px;
+    width: 840px
+}
+
+.skill-slide .skill-btn {
+    height: 113px;
+    margin-bottom: 50px
+}
+
+.skill-slide .skill-btn a {
+    float: left;
+    margin-right: 5px;
+    width: 100px;
+    height: 113px;
+    background: url(../images/mask_transparent_a79493c.png) 50% no-repeat
+}
+
+.skill-slide .skill-btn a:hover, .skill-slide .skill-btn a.on {
+    background: url(../images/skill_btn_12f3886.png) 50% no-repeat
+}
+
+.skill-slide .skill-btn img {
+    display: block;
+    margin: 10px;
+    width: 80px;
+    height: 80px
+}
+
+
+.skill-slide .tempWrap {
+    width: 480px;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+}
+.skill-slide .skill-wrap {
+    width: 38480px;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.skill-slide .skill-wrap .skill-cont {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    width: 450px;
+    height: 380px
+}
+
+.skill-slide .skill-wrap .skill-cont .skill-name {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #333
+}
+
+.skill-slide .skill-wrap .skill-cont .skill-desc {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #333
+}
+
+.skill-slide .skill-wrap .skill-cont .skill-lv {
+    font-size: 14px;
+    line-height: 32px;
+    color: #333
+}
+
+/*玩家攻略*/
+.section3 {
+    position: relative;
+    height: 700px
+}
+
+.section3 .section-content {
+    background: url(../images/bg_section3_3486272.png) 50% 0 no-repeat
+}
+
+.section3 .section-content .section-title {
+    position: absolute;
+    top: 116px;
+    right: 0
+}
+
+.strategy-grid {
+    position: absolute;
+    top: 254px;
+    right: 0;
+    width: 1120px
+}
+
+.strategy-grid .strategy-btn {
+    display: block;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 120px;
+    background-color: #ccc;
+    overflow: hidden
+}
+
+.strategy-grid .strategy-btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s
+}
+
+.strategy-grid .strategy-btn .strategy-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 5px;
+    width: 210px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: url(../images/mask_text_987b9bd.png) repeat
+}
+
+.strategy-grid .strategy-btn:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.strategy-grid .strategy-btn.first {
+    margin: 0;
+    width: 430px;
+    height: 250px
+}
+
+.strategy-grid .strategy-btn.first .strategy-name {
+    width: 420px
+}
+
+.btn-group {
+    position: absolute;
+    top: 540px;
+    left: 450px
+}
+
+.btn-group .btn {
+    display: block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 50px
+}
+
+.btn-group .btn .btn-arrow {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -6px;
+    width: 17px;
+    height: 12px;
+    background: url(../images/btn_arrow_761a996.png) no-repeat
+}
+
+/*精选同人绘画*/
+.section4 {
+    position: relative;
+    height: 800px
+}
+
+.section4 .section-content {
+    background: url(../images/bg_section4_147fbd4.png) 50% 0 no-repeat
+}
+
+.section4 .section-content .section-title {
+    position: absolute;
+    top: 284px;
+    left: 862px
+}
+
+.section4 .section-content .btn {
+    position: absolute;
+    top: 474px;
+    right: 152px;
+    width: 192px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center
+}
+
+.pic-btn {
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 126px;
+    background-color: #ccc;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px
+}
+
+/*.pic-slide .pic-wrap .pic-btn {*/
+/*float: left;*/
+/*margin-right: 20px*/
+/*}*/
+
+.pic-btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s
+}
+
+.pic-btn .pic-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 5px;
+    width: 210px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: url(../images/mask_text_987b9bd.png) repeat
+}
+
+.pic-btn:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.pic-btn.first {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 740px;
+    height: 420px
+}
+
+.pic-btn.first .pic-name {
+    width: 730px
+}
+
+.pic-slide {
+    position: absolute;
+    top: 616px;
+    left: 200px;
+    width: 940px;
+    height: 126px
+}
+
+.pic-slide .pic-prev, .pic-slide .pic-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 73px;
+    height: 40px;
+    background-color: #fff
+}
+
+.pic-slide .pic-prev i, .pic-slide .pic-next i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    transition: all .3s
+}
+
+.pic-slide .pic-prev:hover i, .pic-slide .pic-next:hover i {
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+.pic-slide .pic-prev {
+    left: -98px
+}
+
+.pic-slide .pic-prev i {
+    background: url(../images/pic_prev_0a358d6.jpg) no-repeat
+}
+
+.pic-slide .pic-next {
+    right: -98px
+}
+
+.pic-slide .pic-next i {
+    background: url(../images/pic_next_1ea8054.jpg) no-repeat
+}
+
+.pic-slide .pic-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+.pic-slide .pic-wrap .pic-cont {
+    width: 960px;
+    height: 126px;
+    float: left;
+}
+/*-------------------------------------------------*/
+#Lbt1{
+    position: absolute;
+
+    display: block;
+    /*display: none;*/
+}
+#Lbt2{
+    position: absolute;
+    /*left:0;*/
+    display: none;
+    /*display: block;*/
+}
+/*玩家互动*/
+.section5 {
+    position: relative;
+    height: 1000px
+}
+
+.section5 .section-content .section-title {
+    position: absolute;
+    top: 64px;
+    left: 120px
+}
+
+/*玩家互动下面的发布*/
+.section5 .section-content .deng-lu a {
+    color: #ec7d7a;
+}
+
+.section5 .section-content .deng-lu {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -518px;
+    width: 1036px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section5 .section-content .wan-jia-hu-dong {
+    height: 200px;
+
+    padding: 0 10px;
+    position: absolute;
+
+    top: 240px;
+    left: 70px;
+}
+
+.section5 .section-content .wan-jia-hu-dong .fb {
+    text-align: right;
+}
+
+.section5 .section-content .wan-jia-hu-dong .fb span {
+    position: absolute;
+    left: 22px;
+    top: 82px;
+    font: 700 18px/28px Georgia;
+    color: #bbb;
+
+}
+
+.section5 .section-content .wan-jia-hu-dong label {
+    cursor: pointer;
+
+}
+
+.section5 .section-content .wan-jia-hu-dong .fa-bu {
+    font-size: 18px;
+    padding: 8px 62px;
+    background-color: #e0c689;
+}
+
+#hu-dong {
+    margin: 0 auto;
+    padding: 10px;
+    width: 1012px;
+    height: 92px;
+    background-color: #fff;
+    border: 2px solid #efefef;
+    font-size: 16px;
+
+}
+
+/*-------------------------------------------*/
+/*留言板开始*/
+.section5 .section-content .liu-yan-ban {
+    height: 525px;
+    width: 1030px;
+    overflow: hidden;
+    position: absolute;
+    top: 410px;
+    left: 81px;
+}
+
+.section5 .section-content .liu-yan-ban ul li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section5 .section-content .liu-yan-ban ul li img {
+    vertical-align: inherit;
+
+}
+
+.section5 .section-content .liu-yan-ban ul li span {
+    margin-bottom: 10px;
+    /*padding-left: 7px;*/
+    font-size: 14px;
+    line-height: 16px;
+    color: #ec7d7a;
+}
+
+.section5 .section-content .liu-yan-ban .lyb-txt {
+    padding: 15px 15px 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-clip: padding-box;
+    margin-top: 10px;
+}
+
+.section5 .section-content .liu-yan-ban .lyb-txt p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #888;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.section5 .section-content .liu-yan-ban .lyb-txt a {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #ec7d7a;
+}
+
+.section5 .section-content .liu-yan-ban .hui-fu {
+    float: right;
+    font-size: 14px;
+    color: #ec7d7a;
+}
+.section5 .section-content .liu-yan-ban .dundongtiao{
+    position: relative;
+    top: 0px;
+    float: right;
+    width: 5px;
+    height: 525px;
+    /*background-color: red;*/
+    border: none;
+    z-index: 1;
+
+}
+.section5 .section-content .liu-yan-ban .gun-dong-tiao {
+    position: relative;
+    top: 0px;
+    float: right;
+    width: 5px;
+    /*height: 376px;*/
+    background-color: rgb(221, 221, 221);
+    border: none;
+    background-clip: padding-box;
+    border-radius: 5px;
+    /*z-index: 1;*/
+}
+.lyb-in{
+    position:absolute ;
+    top:0;
+    width: 100%;
+}
+/*-------------------------------*/
+
+/*---------------------------------*/
+.dialog {
+    display: none;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/mask_6b7d844.png) repeat;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s
+}
+
+.dialog .dialog-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translate(0, 20%);
+    -ms-transform: translate(0, 20%);
+    transform: translate(0, 20%);
+    transition: all .5s
+}
+
+.dialog .dialog-close {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 28px;
+    height: 29px;
+    background: url(../images/dialog_close_1e7bf1c.png) no-repeat;
+    text-indent: -9999px;
+    transition: all .5s
+}
+
+.dialog .dialog-close:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.dialog .dialog-wrap {
+    width: 100%;
+    height: 100%
+}
+
+.dialog.show {
+    visibility: visible;
+    opacity: 1
+}
+
+.dialog.show .dialog-container {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+#dialog-video .dialog-container {
+    margin-top: -260px;
+    margin-left: -400px;
+    width: 800px;
+    height: 520px;
+    background-color: #000;
+    border: 2px solid #b69a76
+}
+
+#dialog-login .dialog-container {
+    margin-top: -200px;
+    margin-left: -300px;
+    width: 600px;
+    height: 400px;
+    background: url(../images/dialog_login_b928dc5.jpg) no-repeat
+}
+
+#dialog-login .dialog-wrap {
+    margin: 0 auto;
+    padding-top: 90px
+}
+
+/*---------------------------------------*/
+#NIE-share {
+    line-height: 0 !important;
+    position: relative;
+    font-size: 0;
+    /*display: inline-block;*/
+    margin: 10px auto;
+    width: 571px;
+    height: 25px;
+
+}
+
+#NIE-share .NIE-share6 span {
+    float: left;
+
+}
+
+#NIE-share .NIE-share6 .NIE-share-iconBtn {
+    float: left;
+    margin-left: 10px;
+}
+
+#NIE-share .NIE-share6 .NIE-share-iconBtn li {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+#NIE-share .NIE-share-txt {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+#NIE-share .NIE-share-iconBtn a {
+    margin: 0 6px;
+    width: auto;
+}
+
+#NIE-share .NIE-share-iconBtn span {
+    font-size: 22px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#NIE-share .NIE-share-iconBtn em {
+    font-size: 12px;
+    line-height: 22px;
+    font-style: normal;
+    color: #1a1a1a;
+}
+
+/*更多的盒子*/
+
+#NIE-share .geng-duo-in {
+    width: 204px;
+    height: 58px;
+    border: 1px #c2c2c2 solid;
+    position: absolute;
+    right: -130px;
+    top: 6px;
+    padding-top: 4px;
+    background-color: #fff;
+    display: none;
+}
+
+#NIE-share .geng-duo-in .rrwang span {
+    color: #79A5DA;
+}
+
+#NIE-share .geng-duo-in .qq span {
+    color: hotpink;
+}
+
+#NIE-share .geng-duo-in .db span {
+    color: #519358;
+}
+
+#NIE-share .geng-duo-in .tb span {
+    color: #A5CCF5;
+}
+
+#NIE-share .geng-duo-in li {
+    float: left;
+    padding: 13px;
+    width: 75px;
+}
+
+#NIE-share .geng-duo-in li:hover {
+    background-color: pink;
+}
+
+#NIE-share .geng-duo-in a {
+    padding: 15px 20px;
+}
+
+#NIE-share .geng-duo-in em {
+    color: #333333;
+    font-style: normal;
+}
+
+/*#NIE-share .geng-duo-in li em {*/
+/*margin-left: 25px;*/
+/*}*/
+
+/*-----------------下面的链接和图标-------------------------------*/
+#NIE-copyRight {
+    margin: 0 auto;
+    padding: 50px 0;
+    border-top: 1px solid #e0e0e0
+}
+
+#NIE-copyRight .NIE-copyRight-corp {
+    padding: 0
+}
+
+.nie-copyright-new-inner .nie-cn-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    min-width: 280px;
+    line-height: 48px;
+}
+
+.nie-copyright-new-inner .nie-cn-nav {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 6px;
+    position: relative;
+    z-index: 1;
+    font-family: SimSun;
+    line-height: 22px;
+    width: 550px;
+
+}
+
+.nie-copyright-new-inner {
+    width: 840px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    font-family: SimSun;
+    line-height: 20px;
+    display: block;
+}
+
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship {
+    display: inline-block;
+    padding: 2px;
+    color: #fff;
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: -325px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

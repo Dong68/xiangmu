@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*初始化*/
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dt, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, input {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 0 none;
+    outline-style: none;
+}
+
+i, s {
+    text-decoration: none;
+    font-style: normal;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*右浮动*/
+.fr {
+    float: right;
+}
+
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}

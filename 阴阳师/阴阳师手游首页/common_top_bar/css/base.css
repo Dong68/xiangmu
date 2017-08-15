@@ -1,0 +1,56 @@
+@charset"utf-8";
+/****  css by itcast *****/
+/*
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         佛祖保佑       永无BUG
+*/
+/*初始化页面样式*/
+
+html>body{font-size:14px;} /* for everything else */
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,tr,th,td,img{padding:0; margin:0; font-size:14px;}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset,img,input{border:0;}
+address,caption,cite,code,dfn,th,var{font-weight:normal; font-style:normal;}
+ol,ul,li{list-style:none; vertical-align:top;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:100%;}
+abbr,acronym{border:0;}
+input,:focus { outline: 0; }
+input, button, textarea,
+select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+code, kbd, samp, tt { font-size: 100%; }
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select { *font-size: 100%; }
+caption, th { text-align: left; }
+sup, sub { font-size: 100%; vertical-align: baseline; }
+/* remember to highlight anchors and inserts somehow! */
+:link, :visited , ins { text-decoration: none; }
+blockquote{ quotes: none; }
+a{text-decoration:none; outline:none; color:#333;}
+a img{border:none; display:block;}/*for IE*/
+a:active{star:expression(this.onFocus=this.blur());}/*点击虚框去除*/
+.clearfix:after { content:"."; display: block;height: 0;visibility: hidden;overflow: hidden;clear: both;}
+.clearfix { *zoom:1; }
+
+/*--------------end------------*/
+body{background:#fff; font-size:14px; font-family:arial, 'Microsoft Yahei', 'Hiragino Sans GB', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica; color:#333;}

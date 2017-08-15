@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+/*导航栏总体样式*/
+
+#NIE-topBar *,
+#NIE-topBar-include * {
+    font-size: 12px;
+    font-style: normal;
+}
+
+#NIE-topBar,
+#NIE-topBar-include {
+    position: relative;
+    z-index: 9999;
+    min-width: 1000px;
+    line-height: 24px;
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial;
+    height: 55px;
+    background: #fbfbfb;
+}
+
+#NIE-topBar a,
+#NIE-topBar-include a {
+    color: #626262;
+    text-decoration: none;
+}
+
+#NIE-topBar a:hover,
+#NIE-topBar-include a:hover {
+    color: #bc2e2e;
+}
+
+.NIE-topBar-main {
+    position: relative;
+    z-index: 9999;
+    width: 1000px;
+    margin: auto;
+}
+
+.NIE-topBar-logo,
+.NIE-topBar-arrIcon i,
+#NIE-topBar-menu span,
+.NIE-topBar-hot,
+.NIE-topBar-1st,
+.NIE-topBar-new,
+.NIE-topBar-btn {
+    background: url(../images/com_bar/sprite-w_7fc7459.png) no-repeat;
+}
+
+/*logo部分*/
+
+.NIE-topBar-logo {
+    margin-top: 5px;
+    position: relative;
+    z-index: 13 !important;
+    width: 133px;
+    height: 50px;
+    display: block;
+    float: left;
+    background: url(../images/com_bar/logo_b5525b7.png) no-repeat;
+}
+
+/*新游公告栏*/
+
+#NIE-topBar-news {
+    position: absolute;
+    z-index: 13;
+    width: 420px;
+    height: 54px;
+    left: 125px;
+    padding-left: 18px;
+    padding-top: 0;
+    overflow: hidden;
+    display: block;
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover {
+    height: 250px;
+    overflow: visible;
+    border-color: #1f1f1f;
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover .NIE-topBar-abc-s {
+    visibility: hidden;
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover a {
+    position: absolute;
+    z-index: 2;
+    left: -132px;
+    top: 55px;
+    height: auto;
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover a img {
+    display: block;
+}
+
+#NIE-topBar-news a {
+    width: 960px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+#NIE-topBar-news-close {
+    position: absolute;
+    top: 63px;
+    right: -380px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    background: url(../images/com_bar/sprite-w_7fc7459.png) no-repeat -9999px -9999px;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+/*中部导航栏*/
+
+.NIE-topBar-mid {
+    position: absolute;
+    right: 230px;
+    text-align: right;
+    z-index: 12;
+    width: 536px;
+    height: 55px;
+}
+
+#NIE-topBar .NIE-topBar-mid a,
+#NIE-topBar-include .NIE-topBar-mid a {
+    padding: 0 12px;
+    display: inline-block;
+    color: #333;
+    line-height: 52px;
+}
+
+#NIE-topBar .NIE-topBar-mid a:hover,
+#NIE-topBar-include .NIE-topBar-mid a:hover {
+    color: #bc2e2e !important;
+    border-bottom: 3px solid #bc2e2e;
+    background: url(../images/com_bar/btn_bg.png) repeat;
+}
+
+/*右部滚动按钮*/
+.NIE-topBar-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.NIE-topBar-right a {
+    color: #333 !important;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    line-height: 52px;
+    position: absolute;
+}
+
+.NIE-topBar-right a:hover {
+    color: #bc2e2e !important;
+    border-bottom: 0px solid #bc2e2e;
+    background-color: #F3F3F3;
+    background: url(../images/com_bar/btn_bg.png) repeat;
+}
+
+/*网易游戏目录*/
+#NIE-topBar-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #999;
+    width: 1000px;
+    overflow: hidden;
+    z-index: 7;
+    height: 55px;
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover {
+    height: 530px;
+    opacity: .95;
+}
+
+#NIE-topBar .NIE-topBar-menu-hover,
+#NIE-topBar-include .NIE-topBar-menu-hover {
+    z-index: 8;
+}
+
+#NIE-topBar-menu span {
+    position: absolute;
+    padding: 8px 0 12px;
+    line-height: 14px;
+    right: 106px;
+    padding-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+    background: 0 0;
+    color: #bc2e2e;
+    height: 25px;
+    width: 108px;
+    padding-top: 15px;
+    z-index: 20;
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover span {
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+    background: url(../images/com_bar/btn_bg.png) repeat;
+}
+
+.NIE-topBar-arrIcon {
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.NIE-topBar-arrIcon i {
+    width: 9px;
+    height: 4px;
+    float: left;
+    margin: 6px 0 0 4px;
+    background-position: -103px -101px;
+    display: inline-block;
+}
+
+#NIE-topBar-menu .NIE-table {
+    position: absolute;
+    left: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%;
+    top: 55px;
+    background: #fdfefe;
+    border-top: 1px solid #ececec;
+    margin: 0;
+    display: none;
+}
+
+/*#NIE-topBar-menu.NIE-topBar-menu-hover .NIE-table {*/
+    /*display: block;*/
+/*}*/
+
+#NIE-topBar ul,
+#NIE-topBar li,
+#NIE-topBar-include ul,
+#NIE-topBar-include li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#NIE-topBar-menu .NIE-table * {
+    font-size: 12px;
+}
+
+#NIE-topBar-menu .NIE-table ul {
+    list-style: none;
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav {
+    width: 100%;
+    position: relative;
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav li {
+    width: 110px;
+    float: left;
+    border-right: 1px solid #eee;
+    vertical-align: top;
+}
+
+#NIE-topBar-menu .NIE-table b {
+    line-height: 39px;
+    color: #bc2e2e;
+    display: block;
+    width: 100%;
+    height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: #f7f7f8;
+    overflow: hidden;
+    clear: both;
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav .mobi {
+    position: absolute;
+    left: 248px;
+}
+
+#NIE-topBar-menu .NIE-list {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 435px;
+}
+
+#NIE-topBar-menu .NIE-list li {
+    border-right: 1px solid #eee;
+    height: 415px;
+    float: left;
+    padding: 10px 0 0 14px;
+    overflow: hidden;
+}
+
+#NIE-topBar-menu p {
+    padding: 0;
+    margin: 0;
+    margin-left: 6px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #626262;
+}
+
+#NIE-topBar-menu .NIE-table a {
+    width: 105px;
+    margin-left: 6px;
+    line-height: 24px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#NIE-topBar-menu .NIE-table a em {
+    font-weight: 400;
+    display: block;
+    line-height: 24px;
+}
+
+.NIE-topBar-1st {
+    background-position: right -267px;
+}
+
+.NIE-topBar-hot {
+    background-position: right -144px;
+}
+
+.NIE-topBar-new {
+    background-position: right -206px;
+}
+
+#NIE-topBar-menu .NIE-list .hot {
+    position: absolute;
+    background: #fdfefe;
+    left: 263px;
+    top: 39px;
+}
+
+#NIE-topBar-menu .NIE-list .hot a {
+    width: 125px;
+}
+
+#NIE-topBar-menu .NIE-list .news {
+    position: absolute;
+    background: #fdfefe;
+    left: 421px;
+    top: 39px;
+}
+
+#NIE-topBar-menu .NIE-list .news .long-news {
+    width: 133px;
+    float: left;
+}
+
+#NIE-topBar-menu .NIE-list .news .long-news a {
+    width: 125px;
+}
+
+#NIE-topBar-menu .NIE-list .news .short-news {
+    float: left;
+    width: 106px;
+}
+
+#NIE-topBar-menu .NIE-list .news .mini-news {
+    width: 90px;
+    margin-right: 0;
+    float: left;
+}
+
+#NIE-topBar-menu .NIE-list .news .mini-news a {
+    width: 82px;
+}
+
+#NIE-topBar-menu .NIE-list .NIE-topBar-more {
+    width: 20px;
+    height: 95px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 124px;
+    font-size: 12px;
+    color: #fff;
+    background: #bc2e2e;
+    padding-left: 10px;
+    line-height: 14px;
+    padding-top: 7px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+#NIE-topBar-menu .moreAni .NIE-topBar-more {
+    width: 21px;
+    border-radius: 2px;
+    right: 9px;
+    top: 163px;
+    padding-left: 4px;
+    padding-top: 2px;
+    height: 20px;
+}
+
+#NIE-topBar-menu .NIE-list .NIE-topBar-more:hover {
+    opacity: .8;
+}
+
+#NIE-topBar-menu .moreAni .NIE-nav .mobi {
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+    position: absolute;
+}
+
+#NIE-topBar-menu .moreAni .NIE-list .hot {
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+}
+
+a.NIE-topBar-btn {
+    width: 105px!important;
+    height: 18px;
+    line-height: 18px!important;
+    margin: 5px 0;
+    display: inline-block;
+    padding-left: 0!important;
+    background-position: 0 -338px;
+    text-indent: 25px;
+    color: #bc3030!important;
+}
+
+
+
+
+
+

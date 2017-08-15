@@ -1,0 +1,1 @@
+nie.define(function(){var i=function(){var i={setCopyrightColor:function(i){"gray"==i?nie.config.copyRight.setGray():nie.config.copyRight.setWhite()},setLike:function(){new iLike({id:2,parent:"body",style:1})},setAlert:function(){nie.require("nie.util.PopDialog")}};return init=function(){i.setCopyrightColor("gray")},{fn:i,init:init}}();$(function(){i.init()})});

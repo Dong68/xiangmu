@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+/*首页的样式*/
+
+.colorRed{
+    color: #E5402A;
+}
+.ziti{
+    font-weight:700;
+}
+/*主体部分*/
+.main{
+    width: 100%;
+    min-width: 1280px;
+    height: 1724px;
+    margin: 0 auto;
+    background: url("../images/bg.png") no-repeat top center;
+    background-color: #171020;
+}
+
+/*新版本标题*/
+.newcopy{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    top:200px;
+    opacity:0;
+}
+.newinf_title{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*新版本内容介绍*/
+.new_content{
+    margin-top:30px;
+    height: 540px;
+}
+.new_content .item2{
+    margin-top: 30px;
+}
+.new_content a{
+    display: block;
+}
+/*内容的样式*/
+.new_content li{
+    float: left;
+    margin-right: 12px;
+    margin-top:0px;
+    position: relative;
+
+}
+.new_content li.last{
+    margin-right: 0px;
+}
+
+/*图片边框设置*/
+.new_content li span{
+    position: absolute;
+    bottom:10px;
+    right: 9px;
+    display: none;
+    border-bottom: 2px solid #A57C47;
+    border-left: 2px solid #A57C47;
+}
+.new_content li i{
+    position: absolute;
+    top:-5px;
+    left: 9px;
+    display: none;
+    border-top:2px solid #A57C47;
+    border-right:2px solid #A57C47;
+}
+
+/*游戏特色版块*/
+.gamegood{
+    position: relative;
+    top:200px;
+    opacity:0;
+
+}
+
+/*游戏特色标题*/
+.game_title{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*游戏特色内容*/
+.game_content{
+    height: 540px;
+    width: 1280px;
+    margin:30px auto 0;
+    position: relative;
+}
+.game_content .game_con_in{
+    width: 1110px;
+    height: 540px;
+    position: relative;
+    margin:0 auto;
+}
+.game_content .game_con_in .game_pic li{
+    position: absolute;
+}
+/*.game_content .game_con_in .game_pic li a{*/
+    /*display: block;*/
+/*}*/
+.game_content .game_con_in .game_pic li img{
+    width:100%;
+}
+
+/*游戏图片边框设置*/
+
+.game_content #game_con_in i{
+    position: absolute;
+    width: 740px;
+    height: 407px;
+    top:164px;
+    left: 215px;
+    /*display: none;*/
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    z-index: 50;
+    /*background-color: blue;*/
+}
+.game_content #game_con_in span{
+    position: absolute;
+    width: 738px;
+    height: 405px;
+    bottom:-33px;
+    right: 155px;
+    /*display: none;*/
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    z-index: 50;
+    /*background-color: red;*/
+}
+
+/*游戏特色箭头*/
+.game_content .arr{
+    opacity: 0;
+}
+.game_content .arr .arr_left,.game_content .arr .arr_right{
+    width:42px;
+    height:82px;
+    position: absolute;
+    top:50%;
+    margin-top:-41px;
+    background: url(../images/left.png) no-repeat;
+    z-index: 99;
+}
+
+
+.game_content .arr .arr_right{
+    right:0;
+    background-image: url(../images/right.png);
+}
+
+
+
+/*底部*/
+.foot{
+    height: 176px;
+    margin:100px auto 0;
+}
+.foot .share{
+    width: 612px;
+    margin:0 auto;
+    position: relative;
+}
+.foot .share a:hover{
+    color: #333;
+}
+
+.share li{
+    float: left;
+    margin-right:20px;
+    color: #666;
+    font-size: 14px;
+}
+.share li a{
+    color: #666;
+}
+
+.new_share{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    right:-145px;
+    top:0px;
+    padding: 5px;
+    line-height:25px;
+    background-color: #fff;
+    display: none;
+}
+.new_share li{
+    width: 90px;
+    margin-right:0;
+    padding-left:5px;
+    padding-right:5px;
+}
+.new_share li .share1{
+    background: url("../images/icon.v5.png") no-repeat 0px -174px;
+}
+.new_share li .share2{
+    background: url("../images/icon.v5.png") no-repeat 0px -476px;
+}
+.new_share li .share3{
+    background: url("../images/icon.v5.png") no-repeat 0px -250px;
+}
+.new_share li .share4{
+    background: url("../images/icon.v5.png") no-repeat 0px -450px;
+}
+.new_share li a{
+    display: inline-block;
+    padding-left:23px;
+    width: 77px;
+}
+.new_share li a:hover{
+    background-color: #eee;
+}
+.new_share .iconfont{
+    color: #4547a9;
+}
+
+
+/*版权部分*/
+.cop{
+    height: 75px;
+    padding-top:75px;
+    margin: 0 auto ;
+
+}
+.copyright{
+    width: 740px;
+    margin: 0 auto;
+    height: 48px;
+    line-height:20px;
+    font-size: 12px;
+    color: #666;
+}
+.copyright .copyright_logo{
+    margin-top:9px;
+    display: inline-block;
+    width: 280px;
+
+}
+.copyright .copyright_nav{
+    display: inline-block;
+    width: 450px;
+}
+
+/*版权部分的nav*/
+.copyright_nav_i1 a{
+    color: #666;
+    font-size: 12px;
+    line-height:20px;
+}
+.copyright_nav_i2 a{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    font-family: "宋体";
+    color: #fff;
+    background-color: #610000;
+}
+
+.copyright .copyright_nav  a:hover{
+    text-decoration: underline;
+    color: #ddd;
+}
+/*广告弹窗*/
+.banner{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    display: none;
+    z-index: 10;
+}
+
+/*广告弹窗的大背景*/
+.banner_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    background-color: #000;
+    opacity:0.8;
+}
+
+/*广告弹窗的图片盒子*/
+.banner_pic {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 1300px;
+    height: 735px;
+    margin-top: -370px;
+    margin-left:-650px;
+    display: none;
+    opacity:1;
+}
+/*点击关闭弹窗的窗口*/
+.banner_pic .closeBtn{
+    position: absolute;
+    top:120px;
+    right: 125px;
+    /*transform: rotate(0deg);*/
+
+}
+/*图片内容介绍*/
+.pic_introduce{
+    position: absolute;
+    width: 390px;
+    height: 310px;
+    padding-top:20px;
+    padding-right:40px;
+    top:205px;
+    left: 570px;
+    overflow: hidden;
+    line-height:35px;
+}
+.pic_introduce .ps{
+    color: #393939;
+    font-size: 16px;
+}
+.pic_introduce .ps b{
+    color: #E54930;
+}
+.pic_introduce .ps span{
+    font-weight: 700;
+}
+/*放置滚动条的盒子*/
+.scroll{
+    position: absolute;
+    width: 7px;
+    height: 330px;
+    top:0px;
+    right: 5px;
+    opacity:0;
+    background-color: #fff;
+}
+/*滚动条*/
+.scroll .bar{
+    position: absolute;
+    width: 7px;
+    height: 100px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/*放置箭头的盒子*/
+.arrow{
+    position: absolute;
+    top:350px;
+    width: 1250px;
+    left:40px;
+
+}
+.arrow .arrow_left{
+    float: left;
+    cursor: pointer;
+}
+.arrow .arrow_right{
+    float: right;
+    cursor: pointer;
+
+}

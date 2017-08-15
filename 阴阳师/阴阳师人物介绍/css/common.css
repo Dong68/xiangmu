@@ -1,0 +1,81 @@
+@charset "CESU-8"; /*选择打开的翻译*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*消除样式*/
+    color: #666;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input, img , textarea{
+    margin: 0;
+    padding: 0;
+    border: 0; /*消除input默认边框*/
+    outline: none; /* 消除蓝色边框颜色*/
+    vertical-align: middle; /*图片居中对齐*/
+    resize:none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.clearfix:after { /*伪元数清除浮动 1*/
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix { /*伪元数清除浮动 2  针对IE6/IE7专用  且两个一起用*/
+    zoom: 1;
+}
+
+.fl { /* 公用左浮动*/
+    float: left;
+}
+
+.fr { /* 公用右浮动*/
+    float: right;
+}
+
+.w { /* 公用版心*/
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.red {
+    color: #C81623;
+}
+
+/*菱形的作法 代码*/
+/*<i>*/
+/*<s>◇</s> */
+/*</i>*/
+i {
+    /*width: 20px;*/
+    /*height: 20px;*/
+    display: inline-block;
+    /*background-color: #f00;*/
+    font-style: normal;
+    position: relative;
+}
+
+
+s {
+    text-decoration: none;
+    display: inline-block;
+    /*width: 20px;*/
+    height: 10px;
+    font-family: "宋体";
+    /*font-size:30px;*/
+    line-height: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+}

@@ -1,0 +1,722 @@
+/*css初始化部分*/
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, input, img, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block !important;
+}
+.w {
+    width: 1580px;
+    margin: 0 auto;
+}
+
+/*填充前面,合并时删除*/
+/*.box {*/
+    /*height: 2479px;*/
+/*}*/
+/*声优部分*/
+/*声优标题部分*/
+.shengyou {
+    height: 841px;
+    padding-top: 50px;
+    background: url("../images/shengyou_bg.jpg") no-repeat center center;
+    position: relative;
+}
+.shengyou-title {
+    position: relative;
+    height: 157px;
+}
+.shengyou-title h3 {
+    background: url("../images/shengyou_title.png") no-repeat center center;
+    width: 597px;
+    height: 99px;
+    position: absolute;
+    left: 491px;
+    top: 200px;
+    opacity: 0;
+}
+/*声优标题部分结束*/
+/*声优第一个主角声优部分*/
+.shengyou-1 {
+    width: 1240px;
+    height: 540px;
+    position: absolute;
+    left: 170px;
+    display: none;
+    opacity: 0;
+    top: 407px;
+}
+.shengyou-1 .com-tab {
+    width: 320px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.shengyou-1 .com-tab a {
+    background: url("../images/zj_icon_b690ee2.png");
+    width: 152px;
+    height: 53px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 53px;
+    color: #feeecf;
+    float: left;
+}
+.shengyou-1 .com-tab a.current {
+    background: url("../images/zj_icon_ac_72c4a97.png");
+    height: 56px;
+    color: #a8813c;
+}
+.shengyou-1 .com-tab a:hover {
+    background: url("../images/zj_icon_ac_72c4a97.png");
+    height: 56px;
+    color: #a8813c;
+}
+.shengyou-1 .com-tab a.tab2 {
+    margin-left: 15px;
+}
+.shengyou-1 .zhujue {
+    width: 1240px;
+    height: 434px;
+    margin: 0 auto;
+    position: static;
+    top: 0;
+    opacity: 1;
+}
+.shengyou-1 li {
+    float: left;
+    width: 283px;
+    height: 434px;
+    margin: 0 13px;
+    background: url("../images/card_bg_cv_1506b47.png");
+}
+.shengyou-1 li .pic-wrap img{
+    display: block;
+    width: 254px;
+    height: 406px;
+    margin: 14px auto;
+}
+.shengyou-1 li .pic-wrap {
+    height: 342px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.shengyou-1 li .txt {
+    padding-left: 13px;
+    width: 270px;
+}
+.shengyou-1 li .txt h3 {
+    font-size: 16px;
+    color: #34241c;
+    width: 160px;
+    height: 26px;
+    line-height: 26px;
+}
+.shengyou .play-audio-btn {
+     width: 26px;
+     height: 26px;
+     float: right;
+     background: url("../images/index_z_d844bc8.png") no-repeat;
+     background-position: -734px -124px;
+ }
+.shengyou .play-audio-btn.pause {
+    background-position: -760px -124px;
+}
+.shengyou-1 li .txt p {
+    font-size: 14px;
+    color: #aba7a5;
+    line-height: 20px;
+    width: 254px;
+}
+.shengyou-1 .shishen {
+    width: 1240px;
+    height: 475px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.shengyou-1 .shishen-list {
+    height: 434px;
+    width: 1854px;
+    position: absolute;
+}
+.shengyou-1 .shishen .nav-wrap {
+    width: 235px;
+    height: 21px;
+    margin: 0 auto;
+    margin-top: 454px;
+}
+.shengyou-1 .shishen .nav-wrap a {
+    width: 21px;
+    height: 21px;
+    float: left;
+    background: url("../images/index_z_d844bc8.png");
+}
+.shengyou-1 .shishen .nav-wrap .prev {
+    margin-right: 14px;
+    background-position: -850px -150px;
+}
+.shengyou-1 .shishen .nav-wrap .next {
+    margin-left: 14px;
+    background-position: -829px -150px;
+}
+.shengyou-1 .shishen .nav-wrap .prev:hover {
+    background-position: -884px -150px;
+}
+.shengyou-1 .shishen .nav-wrap .next:hover {
+    background-position: -755px -175px;
+}
+.shengyou-1 .shishen .nav-wrap .cv-nav {
+    width: 58px;
+    height: 10px;
+    margin-top: 5px;
+    float: left;
+}
+.shengyou-1 .shishen .nav-wrap .cv-nav span {
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 2px 6px 0;
+    background-color: #6e6c6a;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.shengyou-1 .shishen .nav-wrap .cv-nav span:hover {
+    background-color: #fff;
+}
+.shengyou-1 .shishen .nav-wrap .cv-nav span.on {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    margin-top: 0px;
+    background-color: transparent;
+}
+/*声优第一个主角声优部分结束*/
+/*声优第二个声优阵容部分开始*/
+.shengyou-2 {
+    width: 1200px;
+    height: 466px;
+    padding-top: 70px;
+    left: 190px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 407px;
+}
+.shengyou-2 .video-part {
+    display: block;
+    margin-left: 40px;
+    position: relative;
+    width: 700px;
+    height: 396px;
+    background: url("../images/cv_video_bg_9c46b03.jpg");
+}
+.shengyou-2 .video-mask {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+.shengyou-2 .video-btn {
+    display: block;
+    width: 74px;
+    height: 76px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -37px;
+    margin-top: -38px;
+    cursor: pointer;
+}
+.shengyou-2 .video-btn em {
+    display: block;
+    width: 63px;
+    height: 65px;
+    background: url("../images/index_z_d844bc8.png") no-repeat;
+    background-position: -560px -606px;
+}
+.shengyou-2 .video-btn i {
+    position: absolute;
+    width: 13px;
+    height: 21px;
+    top: 22px;
+    left: 28px;
+    background: url("../images/index_z_d844bc8.png") no-repeat;
+    background-position: -871px -150px;
+}
+.shengyou-2 .cv-side {
+    position: absolute;
+    width: 618px;
+    height: 690px;
+    background: url("../images/cv_side_c45dd55.png") 0 0 no-repeat;
+    right: -30px;
+    top: -20px;
+}
+/*声优第二个声优阵容部分结束*/
+/*声优第三个游戏配乐部分开始*/
+.shengyou-3 {
+    width: 1200px;
+    height: 533px;
+    padding-top: 40px;
+    left: 190px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 407px;
+}
+.shengyou-3 .mlm-part {
+    width: 683px;
+    height: 533px;
+    margin-left: 22px;
+    background: url("../images/mml_bg_79de3b6.png") no-repeat;
+}
+.shengyou-3 .mlm-pic {
+    width: 323px;
+    height: 483px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    background: url("../images/mml_8e15f28.png") no-repeat;
+}
+.shengyou-3 .mlm-txt {
+    width: 306px;
+    height: 407px;
+    float: left;
+    margin-top: 36px;
+    margin-left: 15px;
+}
+.shengyou-3 .mlm-txt h3 {
+    width: 160px;
+    overflow: hidden;
+    color: rgb(52, 36, 28);
+    font-size: 18px;
+    line-height: 26px;
+}
+.shengyou-3 .mlm-txt p {
+    line-height: 24px;
+    color: rgb(52, 36, 28);
+    font-size: 14px;
+}
+.shengyou-3 .mlm-txt .info {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted rgb(184, 163, 154);
+    line-height: 24px;
+    color: rgb(52, 36, 28);
+    font-size: 14px;
+}
+.shengyou-3 .mlm-side {
+    position: absolute;
+    width: 515px;
+    height: 696px;
+    right: 5px;
+    top: -33px;
+    background: url("../images/mml_side_3344401.png");
+}
+/*声优第三个游戏配乐部分结束*/
+/*声优左侧切换部分*/
+.side-tabs {
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top: -115px;
+    width: 116px;
+    height: 253px;
+}
+.side-tabs.cv-tab {
+    background: url("../images/side_cv_209e020.png");
+}
+.side-tab {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+}
+.side-tab.tab1 {
+    left: 0;
+    top: 0;
+}
+.side-tab.tab2 {
+    left: 28px;
+    top: 81px;
+}
+.side-tab.tab3 {
+    left: 0;
+    bottom: 0;
+}
+.side-tab span {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    background: url("../images/index_z_d844bc8.png") no-repeat;
+}
+.side-tab:hover span {
+    opacity: 1;
+}
+.side-tab.current span{
+    opacity: 1;
+}
+.side-tab.tab1 span {
+    width: 101px;
+    height: 102px;
+    top: 11px;
+    left: 0;
+}
+.side-tab.tab2 span {
+    width: 92px;
+    height: 116px;
+    left: -5px;
+    top: -13px;
+}
+.side-tab.tab3 span {
+    width: 102px;
+    height: 101px;
+    left: -2px;
+    top: -34px;
+}
+.side-tabs.cv-tab .side-tab.tab1 span {
+    background-position: -321px -102px;
+}
+.side-tabs.cv-tab .side-tab.tab2 span {
+    background-position: 0px -137px;
+}
+.side-tabs.cv-tab .side-tab.tab3 span {
+    background-position: -422px -101px;
+}
+/*声优左侧切换部分结束*/
+/*声优部分结束*/
+
+
+/*玩法部分*/
+.wanfa {
+    height: 946px;
+    padding-top: 50px;
+    background: url("../images/wanfa_bg.jpg") no-repeat;
+    position: relative;
+}
+.wanfa-title {
+    position: relative;
+    height: 157px;
+}
+.wanfa-title h3 {
+    background: url("../images/wanfa_title.png") no-repeat center center;
+    width: 640px;
+    height: 99px;
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    opacity: 0;
+}
+/*玩法第一个特色玩法部分开始*/
+.wanfa-1 {
+    width: 1200px;
+    height: 627px;
+    position: absolute;
+    left: 190px;
+    display: none;
+    top: 407px;
+    opacity: 0;
+}
+.wanfa-1 .pic-container {
+    width: 659px;
+    height: 471px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/pic_wrap_6c7a056.png");
+}
+.wanfa-1 .pic-container .pic-wrap {
+    width: 535px;
+    height: 367px;
+    border: 1px solid #aa9987;
+    box-shadow: -1px 0 8px 0 #aa9987;
+    padding: 3px;
+    top: 50%;
+    left: 50%;
+    margin-top: -183px;
+    margin-left: -267px;
+    position: absolute;
+}
+.wanfa-1 .pic-container .big-pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wanfa-1 .special-btns {
+    width: 215px;
+    height: 213px;
+    top: 60px;
+    position: absolute;
+}
+.wanfa-1 .special-btns-right {
+    right: 0px;
+}
+.wanfa-1 .special-btns a {
+    display: block;
+    width: 139px;
+    height: 139px;
+    position: absolute;
+    text-align: center;
+    line-height: 139px;
+    color: #fff;
+    font-size: 18px;
+}
+.wanfa-1 .special-btns-left .left-btn1 {
+    right: 0px;
+    top: 0px;
+    background: url("../images/left_btn1_facceb5.png");
+}
+.wanfa-1 .special-btns-left .left-btn2 {
+    left: 6px;
+    top: 69px;
+    background: url("../images/left_btn2_fc1784f.png");
+}
+.wanfa-1 .special-btns-left .left-btn3 {
+    right: 0px;
+    top: 138px;
+    background: url("../images/left_btn3_48cc73e.png");
+}
+.wanfa-1 .special-btns-right .right-btn1 {
+    background: url("../images/right_btn1_2498714.png");
+    left: 6px;
+    top: 0px;
+}
+.wanfa-1 .special-btns-right .right-btn2 {
+    background: url("../images/right_btn2_a9701a7.png");
+    right: 0px;
+    top: 69px;
+}
+.wanfa-1 .special-btns-right .right-btn3 {
+    background: url("../images/right_btn3_1de0182.png");
+    left: 6px;
+    top: 138px;
+}
+.wanfa-1 .special-btns a em {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    width: 88px;
+    height: 88px;
+    border: 4px solid transparent;
+    transform: rotate(45deg);
+}
+.wanfa-1 .special-btns a.current{
+    color: #ffda68;
+}
+.wanfa-1 .special-btns a.current em{
+    border: 4px solid #ffda68;
+    color: #ffda68;
+}
+.wanfa-1 .special-btns a:hover {
+    color: #ffda68;
+}
+.wanfa-1 .special-btns a:hover em{
+    border: 4px solid #ffda68;
+}
+.wanfa-1 .pic-container p {
+    position: absolute;
+    bottom: 17px;
+    left: 60px;
+    color: #644f26;
+    font-size: 14px;
+}
+/*玩法第一个特色玩法部分结束*/
+/*玩法第二个副本探索部分*/
+.wanfa-2 {
+    width: 1089px;
+    height: 627px;
+    position: absolute;
+    left: 246px;
+    display: none;
+    top: 407px;
+    opacity: 0;
+}
+.wanfa-2 .left-stick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 627px;
+    background: url("../images/wanfa_stick_left_648842c.png") no-repeat;
+}
+.wanfa-2 .right-stick {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47px;
+    height: 627px;
+    background: url("../images/wanfa_stick_right_fe92266.png") no-repeat;
+}
+.wanfa-2 .stick-bg {
+    position: absolute;
+    width: 1012px;
+    height: 544px;
+    background: url("../images/wanfa_stick_bg_62c66af.png") no-repeat;
+    left: 38px;
+    top: 42px;
+}
+.wanfa-2 .fuben-map {
+    width: 945px;
+    height: 491px;
+    background: url("../images/map_b548424.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -472px;
+    top: 50%;
+    margin-top: -245px;
+}
+/*玩法第二个副本探索部分结束*/
+/*玩法第三个新手指南部分开始*/
+.wanfa-3 {
+    width: 1052px;
+    height: 611px;
+    position: absolute;
+    left: 264px;
+    display: none;
+    top: 407px;
+    opacity: 0;
+    background: url("../images/explore_bg_2819bfb.png") no-repeat;
+}
+.wanfa-3 .tansuo-map {
+    position: absolute;
+    width: 1005px;
+    height: 567px;
+    background: url("../images/explre_8fc230a.png") no-repeat;
+    top: 20px;
+    left: 20px;
+}
+/*玩法第三个新手指南部分结束*/
+/*玩法左侧切换部分*/
+.side-tabs.wanfa-tab {
+    background: url("../images/side_wanfa_fb6d05a.png");
+}
+.side-tabs.wanfa-tab .side-tab.tab1 span {
+    background-position: 0px -253px;
+}
+.side-tabs.wanfa-tab .side-tab.tab2 span {
+    background-position: -229px 0px;
+}
+.side-tabs.wanfa-tab .side-tab.tab3 span {
+    background-position: -422px 0px;
+}
+/*玩法左侧切换部分结束*/
+/*玩法部分结束*/
+/*页面底部部分开始*/
+.page-footer {
+    height: 200px;
+    background-color: #000;
+    position: relative;
+}
+.page-footer .share-box {
+    position: absolute;
+    bottom: 140px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 450px;
+    left: 50%;
+    margin-left: -225px;
+}
+.page-footer .share-box span{
+    font-size: 12px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    color: #84807e;
+}
+.page-footer .share-box li {
+    float: left;
+    margin-left: 10px;
+}
+.page-footer .share-box a {
+    color: #84807e;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.page-footer .share-box a em {
+    width: 21px;
+    height: 20px;
+    float: left;
+    margin-right: 3px;
+}
+.page-footer .share-box .share-weixin em {
+    background: url("../images/weixin.jpg");
+}
+.page-footer .share-box .share-yixin em {
+    background: url("../images/yixin.jpg");
+}
+.page-footer .share-box .share-weibo em {
+    background: url("../images/weibo.jpg");
+}
+.page-footer .share-box .share-QQkongjian em {
+    background: url("../images/QQkongjian.jpg");
+}
+.page-footer .share-box .share-gengduo em {
+    background: url("../images/gengduo.jpg");
+}
+.copyright-box {
+    width: 840px;
+    height: 48px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -420px;
+}
+.copyright-box .nie-cn-logo {
+    width: 280px;
+    height: 48px;
+    float: left;
+}
+.copyright-box .nie-cn-nav {
+    float: left;
+    width: 510px;
+    height: 48px;
+    margin-left: 20px;
+}
+.copyright-box .nie-cn-nav-1 {
+    height: 20px;
+    color: #fff;
+}
+.copyright-box .nie-cn-nav-1 a {
+    color: #fff;
+    font-size: 12px;
+    font-family: SimSun;
+}
+.copyright-box .nie-cn-nav-1 a:hover {
+    text-decoration: underline;
+}
+.copyright-box .nie-cn-nav-2 {
+    color: #fff;
+    font-size: 12px;
+    line-height: 28px;
+}
+.copyright-box .nie-cn-nav-2 a {
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #610000;
+    height: 26px;
+    line-height: 26px;
+    float: right;
+    margin-right: 20px;
+    padding: 0 5px;
+    margin-top: 2px;
+}
+
+.copyright-box .nie-cn-logo a {
+    display: block;
+    float: left;
+}
+/*页面底部部分结束*/
